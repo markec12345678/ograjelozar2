@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 const faqConfig = {
-  tag: " pogosta VPRAŠANJA ",
+  tag: "POGOSTA VPRAŠANJA",
   heading: "Kaj Vas Zanima o WPC?",
   ctaText: "Imate dodatna vprašanja?",
   ctaLink: "#contact",
@@ -37,7 +37,7 @@ const faqConfig = {
     {
       id: 6,
       question: "Kakšna je cena WPC ograje in ali vključuje montažo?",
-      answer: "Cena je odvisna od dimenzij, izbrane vrste WPC materiala in сложности montaže. V našo ceno je vedno vključena strokovna montaža. Za natančno in brezplačno ponudbo nas kontaktirajte - pridemo na ogled in pripravimo prilagojeno ponudbo."
+      answer: "Cena je odvisna od dimenzij, izbrane vrste WPC materiala in zahtevnosti montaže. V našo ceno je vedno vključena strokovna montaža. Za natančno in brezplačno ponudbo nas kontaktirajte - pridemo na ogled in pripravimo prilagojeno ponudbo."
     },
     {
       id: 7,

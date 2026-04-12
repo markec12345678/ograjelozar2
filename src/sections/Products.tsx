@@ -13,39 +13,71 @@ interface Product {
 }
 
 const products: Product[] = [
-  {
-    id: 1,
-    name: "WPC Prečna Ograja",
-    description: "Klasična prečna ograja z vodoravnimi deskami. Primeren za dvorišča, balkone in terase.",
-    category: "Ograje",
-    image: "/images/fences-horizontal/wpc-precna-1.jpg",
-    features: ["Do 2m višine", "Različne barve", "Enostavna montaža"]
-  },
-  {
-    id: 2,
-    name: "WPC Pokončna Ograja",
-    description: "Vertikalna ograja s pokončnimi deskami. Moderna oblika za sodobne domove.",
-    category: "Ograje",
-    image: "/images/fences-vertical/wpc-pokoncna-1.jpg",
-    features: ["Do 2.5m višine", "Zračna struktura", "Minimalističen videz"]
-  },
-  {
-    id: 3,
-    name: "WPC Terasa",
-    description: "Lesena terasa iz WPC desk. Idealna za bazene, vrtove in pohodne površine.",
-    category: "Terase",
-    image: "/images/terraces/wpc-terasa-1.jpg",
-    features: ["Protizdrsna površina", "Odpadna voda", "Trajna rešitev"]
-  },
-  {
-    id: 4,
-    name: "Inox + WPC Ograja",
-    description: "Kombinacija INOX ogrodja z WPC polnili. Najboljša izbira za moderne objekte.",
-    category: "Ograje",
-    image: "/images/fences-horizontal/wpc-precna-2.jpg",
-    features: ["INOX 304", "Premium videz", "Dolga življenjska doba"]
-  }
-];
+    {
+      id: 1,
+      name: "WPC Prečna Ograja",
+      description: "Klasična prečna ograja z vodoravnimi deskami. Primeren za dvorišča, balkone in terase.",
+      category: "Ograje",
+      image: "/images/fences-horizontal/fence-h-01.jpg",
+      features: ["Do 2m višine", "Različne barve", "Enostavna montaža"]
+    },
+    {
+      id: 2,
+      name: "WPC Pokončna Ograja",
+      description: "Vertikalna ograja s pokončnimi deskami. Moderna oblika za sodobne domove.",
+      category: "Ograje",
+      image: "/images/fences-vertical/fence-v-02.jpg",
+      features: ["Do 2.5m višine", "Zračna struktura", "Minimalističen videz"]
+    },
+    {
+      id: 3,
+      name: "WPC Terasa",
+      description: "Lesena terasa iz WPC desk. Idealna za bazene, vrtove in pohodne površine.",
+      category: "Terase",
+      image: "/images/terraces/terrace-01.jpg",
+      features: ["Protizdrsna površina", "Odpadna voda", "Trajna rešitev"]
+    },
+    {
+      id: 4,
+      name: "WPC + Inox Ograja",
+      description: "Kombinacija WPC opisja z INOX ogrodjem. Najboljša izbira za moderne objekte.",
+      category: "Ograje",
+      image: "/images/fences-horizontal/fence-h-04.jpg",
+      features: ["WPC opisje", "INOX 304", "Premium videz"]
+    },
+    {
+      id: 5,
+      name: "WPC Ograja z Kamnom",
+      description: "Prečna ograja z dekorativnimi kamniti elementi. Udružen naraven in umetni material za unikaten videz.",
+      category: "Ograje",
+      image: "/images/fences-horizontal/fence-h-03.jpg",
+      features: ["Kamniti elementi", "Prečna struktura", "Dekorativni videz"]
+    },
+    {
+      id: 6,
+      name: "WPC Visoka Pokončna Ograja",
+      description: "Visoka vertikalna ograja za dodatno zasebnost in varnost. Primernega za kjerkoli dvorišče.",
+      category: "Ograje",
+      image: "/images/fences-vertical/fence-v-04.jpg",
+      features: ["Do 3m višine", "Zasebnost", "Varnost"]
+    },
+    {
+      id: 7,
+      name: "WPC Terasa s Osvetljevanjem",
+      description: "Terasa z vgrajenim LED osvetljevanjem za večerjo rabo in ambiente.",
+      category: "Terase",
+      image: "/images/terraces/terrace-02.jpg",
+      features: ["Vgrajena LED", "Večerjna raba", "Ambientno osvetljevanje"]
+    },
+    {
+      id: 8,
+      name: "WPC Balkonski Sistem",
+      description: "Kompleten sistem za balkone z ograjo in pokritjem. Zaprla rešitev za urbano bivanje.",
+      category: "Ograje",
+      image: "/images/fences-horizontal/fence-h-05.jpg",
+      features: ["Balkonski sistem", "Kompleten paket", "Urban dizajn"]
+    }
+  ];
 
 const categories = ["Vse", "Ograje", "Terase"];
 

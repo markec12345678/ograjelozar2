@@ -21,7 +21,7 @@ const ctaData: CTAProps[] = [
   },
   {
     title: "Oglejte si naša dela",
-    subtitle: "StočRealiziranih projektov po vsej Sloveniji - poglejte inspiracijo.",
+    subtitle: "Sto realiziranih projektov po vsej Sloveniji - poglejte inspiracijo.",
     ctaText: "Galerija Projektov",
     ctaLink: "#gallery",
     variant: 'secondary'

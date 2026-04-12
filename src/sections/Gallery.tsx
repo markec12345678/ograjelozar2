@@ -11,48 +11,62 @@ interface GalleryItem {
 }
 
 const galleryItems: GalleryItem[] = [
-  {
-    id: 1,
-    title: "WPC Prečna Ograja",
-    category: "Ograje",
-    image: "/images/fences-horizontal/wpc-precna-1.jpg",
-    size: 'large'
-  },
-  {
-    id: 2,
-    title: "WPC Terasa",
-    category: "Terase",
-    image: "/images/terraces/wpc-terasa-1.jpg",
-    size: 'medium'
-  },
-  {
-    id: 3,
-    title: "Pokončna Ograja",
-    category: "Ograje",
-    image: "/images/fences-vertical/wpc-pokoncna-1.jpg",
-    size: 'medium'
-  },
-  {
-    id: 4,
-    title: "Inox + WPC",
-    category: "Ograje",
-    image: "/images/fences-horizontal/wpc-precna-2.jpg",
-    size: 'small'
-  },
-  {
-    id: 5,
-    title: "Barvna Ograja",
-    category: "Ograje",
-    image: "/images/fences-horizontal/wpc-precna-3.jpg",
-    size: 'small'
-  },
-  {
-    id: 6,
-    title: "Terasa + Robnik",
-    category: "Terase",
-    image: "/images/terraces/wpc-terasa-2.jpg",
-    size: 'large'
-  },
+    {
+      id: 1,
+      title: "WPC Prečna Ograja",
+      category: "Ograje",
+      image: "/images/gallery/gallery-01.jpg",
+      size: 'large'
+    },
+    {
+      id: 2,
+      title: "WPC Terasa",
+      category: "Terase",
+      image: "/images/terraces/terrace-01.jpg",
+      size: 'medium'
+    },
+    {
+      id: 3,
+      title: "Pokončna Ograja",
+      category: "Ograje",
+      image: "/images/fences-vertical/fence-v-02.jpg",
+      size: 'medium'
+    },
+    {
+      id: 4,
+      title: "WPC + Inox Ograja",
+      category: "Ograje",
+      image: "/images/gallery/gallery-02.jpg",
+      size: 'small'
+    },
+    {
+      id: 5,
+      title: "WPC Ograja z Kamnom",
+      category: "Ograje",
+      image: "/images/gallery/gallery-03.jpg",
+      size: 'small'
+    },
+    {
+      id: 6,
+      title: "WPC Visoka Pokončna Ograja",
+      category: "Ograje",
+      image: "/images/fences-vertical/fence-v-04.jpg",
+      size: 'large'
+    },
+    {
+      id: 7,
+      title: "WPC Terasa s Osvetljevanjem",
+      category: "Terase",
+      image: "/images/terraces/terrace-02.jpg",
+      size: 'medium'
+    },
+    {
+      id: 8,
+      title: "WPC Balkonski Sistem",
+      category: "Ograje",
+      image: "/images/gallery/gallery-04.jpg",
+      size: 'large'
+    },
 ];
 
 export default function Gallery() {

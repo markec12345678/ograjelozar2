@@ -314,7 +314,7 @@ export default function Contact() {
                   </div>
 
                   {/* Honeypot for spam protection */}
-                  <input type="text" name="_gotcha" style={{ display: 'none' }} tabIndex={-1} autoComplete="off" aria-hidden="true" />
+                  <input type="hidden" name="_gotcha" />
 
                   <button
                     type="submit"

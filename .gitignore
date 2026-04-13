@@ -1,0 +1,8 @@
+node_modules/
+.next/.env*
+.playwright-mcp/
+npm-debug.log
+yarn-error.log
+.DS_Store
+lighthouse_tmp/
+pa11y_tmp/

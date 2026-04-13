@@ -313,8 +313,7 @@ export default function Contact() {
                     )}
                   </div>
 
-                  {/* Honeypot for spam protection */}
-                  <input type="hidden" name="_gotcha" />
+
 
                   <button
                     type="submit"

@@ -180,7 +180,7 @@ export default function Gallery() {
             return (
               <button
                 key={item.id}
-                ref={(el) => fadeIn.ref(el)}
+                ref={fadeIn.ref}
                 onClick={() => handleOpenLightbox(item)}
                 className={`relative group overflow-hidden rounded-2xl cursor-pointer text-left ${
                   item.size === 'large' ? 'col-span-2 row-span-2' :

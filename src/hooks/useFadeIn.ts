@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 
 interface UseFadeInOptions {
   delay?: number;
@@ -10,11 +10,16 @@ interface UseFadeInOptions {
 interface FadeInResult {
   className: string;
   isVisible: boolean;
+  ref: (node: HTMLElement | null) => void;
 }
 
 export function useFadeIn({ delay = 0, threshold = 0.1 }: UseFadeInOptions = {}): FadeInResult {
   const [isVisible, setIsVisible] = useState(false);
-  const ref = useRef<HTMLDivElement>(null);
+  const elementRef = useRef<HTMLElement | null>(null);
+
+  const ref = useCallback((node: HTMLElement | null) => {
+    elementRef.current = node;
+  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -29,8 +34,8 @@ export function useFadeIn({ delay = 0, threshold = 0.1 }: UseFadeInOptions = {})
       { threshold }
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
+    if (elementRef.current) {
+      observer.observe(elementRef.current);
     }
 
     return () => observer.disconnect();
@@ -42,8 +47,13 @@ export function useFadeIn({ delay = 0, threshold = 0.1 }: UseFadeInOptions = {})
 
   return { 
     className: `transition-all duration-700 ease-out ${animationClass}`,
-    isVisible 
+    isVisible,
+    ref
   };
 }
 
 export default useFadeIn;
+
+export function useFadeInStagger(index: number, baseDelay: number = 100) {
+  return useFadeIn({ delay: index * baseDelay });
+}
